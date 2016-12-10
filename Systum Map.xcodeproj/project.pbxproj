@@ -12,6 +12,7 @@
 		CB859B8E1DFC2FC90099817A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB859B8C1DFC2FC90099817A /* Main.storyboard */; };
 		CB859B901DFC2FC90099817A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB859B8F1DFC2FC90099817A /* Assets.xcassets */; };
 		CB859B931DFC2FC90099817A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB859B911DFC2FC90099817A /* LaunchScreen.storyboard */; };
+		CB859BA31DFC53FB0099817A /* us_states.json in Resources */ = {isa = PBXBuildFile; fileRef = CB859BA21DFC53FB0099817A /* us_states.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CB859B8F1DFC2FC90099817A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB859B921DFC2FC90099817A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB859B941DFC2FC90099817A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB859BA21DFC53FB0099817A /* us_states.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = us_states.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		CB859B871DFC2FC90099817A /* Systum Map */ = {
 			isa = PBXGroup;
 			children = (
+				CB859BA11DFC53FB0099817A /* MapData */,
 				CB859B881DFC2FC90099817A /* AppDelegate.swift */,
 				CB859B8A1DFC2FC90099817A /* ViewController.swift */,
 				CB859B8C1DFC2FC90099817A /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				CB859B941DFC2FC90099817A /* Info.plist */,
 			);
 			path = "Systum Map";
+			sourceTree = "<group>";
+		};
+		CB859BA11DFC53FB0099817A /* MapData */ = {
+			isa = PBXGroup;
+			children = (
+				CB859BA21DFC53FB0099817A /* us_states.json */,
+			);
+			path = MapData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB859B931DFC2FC90099817A /* LaunchScreen.storyboard in Resources */,
+				CB859BA31DFC53FB0099817A /* us_states.json in Resources */,
 				CB859B901DFC2FC90099817A /* Assets.xcassets in Resources */,
 				CB859B8E1DFC2FC90099817A /* Main.storyboard in Resources */,
 			);
