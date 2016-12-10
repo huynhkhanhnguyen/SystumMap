@@ -18,26 +18,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pHv-eD-gTD">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="480"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="HtC-Yy-5pn"/>
                                 </connections>
                             </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NO5-b3-bAL">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pHv-eD-gTD" secondAttribute="bottom" id="7Zu-4u-Aeq"/>
+                            <constraint firstAttribute="trailing" secondItem="NO5-b3-bAL" secondAttribute="trailing" id="7TC-fg-Vkh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pHv-eD-gTD" secondAttribute="bottom" constant="100" id="7Zu-4u-Aeq"/>
+                            <constraint firstItem="NO5-b3-bAL" firstAttribute="top" secondItem="pHv-eD-gTD" secondAttribute="bottom" id="DV2-9d-W1r"/>
                             <constraint firstItem="pHv-eD-gTD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HPn-lf-oNt"/>
                             <constraint firstAttribute="trailing" secondItem="pHv-eD-gTD" secondAttribute="trailing" id="V04-Mn-Tor"/>
+                            <constraint firstItem="NO5-b3-bAL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="frd-8V-FNe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NO5-b3-bAL" secondAttribute="bottom" id="mSb-cC-e5N"/>
                             <constraint firstItem="pHv-eD-gTD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uIi-l3-peM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="pHv-eD-gTD" id="4uX-xk-8hY"/>
+                        <outlet property="textView" destination="NO5-b3-bAL" id="5k9-h1-ZzP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="136"/>
         </scene>
     </scenes>
 </document>
