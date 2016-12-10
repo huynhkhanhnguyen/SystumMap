@@ -24,7 +24,7 @@ class CustomPolygon: MKPolygon {
   }
 }
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController {
   private let initialLocation = CLLocation(latitude: 39.0119, longitude: -98.4842)
   private let regionRadius: CLLocationDistance = 4000000 // meters
   @IBOutlet weak var mapView: MKMapView!
@@ -68,7 +68,23 @@ class ViewController: UIViewController, MKMapViewDelegate {
       }
     }
   }
+}
 
+extension ViewController: MKMapViewDelegate {
+  func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+    if let polygon = overlay as? CustomPolygon {
+      let renderer = MKPolygonRenderer(overlay: polygon)
+      renderer.strokeColor = polygon.strokeColor
+      renderer.fillColor = polygon.fillColor
+      renderer.lineWidth = 2
+      return renderer
+    }
+    return MKPolygonRenderer()
+  }
+}
+
+// Utilities
+extension ViewController {
   private func initializeTapGesture() {
     let tap = UITapGestureRecognizer(target: self, action: #selector(handleMapTap))
     tap.cancelsTouchesInView = false
@@ -109,16 +125,4 @@ class ViewController: UIViewController, MKMapViewDelegate {
     let region = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate, regionRadius, regionRadius)
     mapView.setRegion(region, animated: true)
   }
-
-  func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
-    if let polygon = overlay as? CustomPolygon {
-      let renderer = MKPolygonRenderer(overlay: polygon)
-      renderer.strokeColor = polygon.strokeColor
-      renderer.fillColor = polygon.fillColor
-      renderer.lineWidth = 2
-      return renderer
-    }
-    return MKPolygonRenderer()
-  }
 }
-
