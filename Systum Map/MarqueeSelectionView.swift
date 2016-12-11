@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol MarqueeSelectionViewDelegate: class {
+  func updateFrame(frame: CGRect)
+}
+
 class MarqueeSelectionView: UIView {
   private let contentView = UIView()
   private let resizeButton = UIButton()
   private let buttonSize = CGSize(width: 50, height: 50)
   private let mininumContentSize = CGSize(width: 200, height: 200)
+
+  weak var delegate: MarqueeSelectionViewDelegate?
 
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -56,6 +62,8 @@ class MarqueeSelectionView: UIView {
 
         let adjustedPoint = CGPoint(x: adjustedX, y: adjustedY)
         gView.center = adjustedPoint
+
+        delegate?.updateFrame(contentView.frame)
       }
 
       gesture.setTranslation(CGPoint(x: 0, y: 0), inView: self)
@@ -80,6 +88,8 @@ class MarqueeSelectionView: UIView {
         if contentView.frame.maxY > frame.height {
           contentView.frame.size = CGSize(width: contentView.frame.width, height: frame.maxY - contentView.frame.origin.y - 20)
         }
+
+        delegate?.updateFrame(contentView.frame)
       }
     }
     updateResizeButtonFrame()
