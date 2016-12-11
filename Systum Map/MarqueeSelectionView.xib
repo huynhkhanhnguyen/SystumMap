@@ -7,24 +7,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view alpha="0.20000000000000001" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarqueeSelectionView" customModule="Systum_Map" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarqueeSelectionView" customModule="Systum_Map" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3L-9o-fQP">
+                <view opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3L-9o-fQP">
                     <rect key="frame" x="100" y="50" width="303" height="272"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8m-VU-wBn">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8m-VU-wBn">
                             <rect key="frame" x="243" y="212" width="60" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="60" id="WyI-Wq-LR5"/>
                                 <constraint firstAttribute="height" constant="60" id="xYm-KX-gFc"/>
                             </constraints>
-                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" title="Button" image="HandCursor"/>
+                            <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="HandCursor"/>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="J8m-VU-wBn" secondAttribute="trailing" id="1hI-IE-HXO"/>
                         <constraint firstAttribute="width" constant="303" id="qKI-Ec-NQE"/>
@@ -33,7 +33,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Y3L-9o-fQP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="FTa-C7-p7f"/>
                 <constraint firstItem="Y3L-9o-fQP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="HQT-tM-YQ5"/>
