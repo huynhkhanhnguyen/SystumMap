@@ -34,7 +34,7 @@ class MarqueeSelectionView: UIView {
   }
 
   private func updateResizeButtonFrame() {
-    let resizeOrigin = CGPoint(x: contentView.frame.maxX - buttonSize.width + 10, y: contentView.frame.maxY - buttonSize.height - 10)
+    let resizeOrigin = CGPoint(x: contentView.frame.maxX - buttonSize.width + 5, y: contentView.frame.maxY - buttonSize.height - 5)
     resizeButton.frame = CGRect(origin: resizeOrigin, size: buttonSize)
   }
   
