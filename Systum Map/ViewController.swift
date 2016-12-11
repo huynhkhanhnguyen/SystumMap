@@ -37,6 +37,11 @@ class ViewController: UIViewController {
     initializeTapGesture()
   }
 
+  @IBAction func selectButtonPressed(sender: AnyObject) {
+    let marqueeView = MarqueeSelectionView.initFromNib()
+    view.addSubview(marqueeView)
+  }
+
   func handleMapTap(tap: UIGestureRecognizer) {
     let tapPoint = tap.locationInView(mapView)
     let pointCoor2D = mapView.convertPoint(tapPoint, toCoordinateFromView: mapView)
@@ -122,7 +127,7 @@ extension ViewController {
   }
 
   private func centerMapAtLocation(location: CLLocation) {
-    let region = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate, regionRadius, regionRadius)
-    mapView.setRegion(region, animated: true)
+    mapView.centerCoordinate = initialLocation.coordinate
+    mapView.setZoomLevel(5)
   }
 }

@@ -13,6 +13,10 @@
 		CB859B901DFC2FC90099817A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB859B8F1DFC2FC90099817A /* Assets.xcassets */; };
 		CB859B931DFC2FC90099817A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB859B911DFC2FC90099817A /* LaunchScreen.storyboard */; };
 		CB859BA31DFC53FB0099817A /* us_states.json in Resources */ = {isa = PBXBuildFile; fileRef = CB859BA21DFC53FB0099817A /* us_states.json */; };
+		CB859BA51DFD56EA0099817A /* MapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB859BA41DFD56EA0099817A /* MapView+Extension.swift */; };
+		CB859BA71DFD5A780099817A /* MarqueeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB859BA61DFD5A780099817A /* MarqueeSelectionView.swift */; };
+		CB859BA91DFD5A8A0099817A /* MarqueeSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB859BA81DFD5A8A0099817A /* MarqueeSelectionView.xib */; };
+		CB859BAB1DFD65D10099817A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB859BAA1DFD65D10099817A /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CB859B921DFC2FC90099817A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB859B941DFC2FC90099817A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB859BA21DFC53FB0099817A /* us_states.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = us_states.json; sourceTree = "<group>"; };
+		CB859BA41DFD56EA0099817A /* MapView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapView+Extension.swift"; sourceTree = "<group>"; };
+		CB859BA61DFD5A780099817A /* MarqueeSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeSelectionView.swift; sourceTree = "<group>"; };
+		CB859BA81DFD5A8A0099817A /* MarqueeSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarqueeSelectionView.xib; sourceTree = "<group>"; };
+		CB859BAA1DFD65D10099817A /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				CB859B8F1DFC2FC90099817A /* Assets.xcassets */,
 				CB859B911DFC2FC90099817A /* LaunchScreen.storyboard */,
 				CB859B941DFC2FC90099817A /* Info.plist */,
+				CB859BA41DFD56EA0099817A /* MapView+Extension.swift */,
+				CB859BA61DFD5A780099817A /* MarqueeSelectionView.swift */,
+				CB859BA81DFD5A8A0099817A /* MarqueeSelectionView.xib */,
+				CB859BAA1DFD65D10099817A /* UIView+Extension.swift */,
 			);
 			path = "Systum Map";
 			sourceTree = "<group>";
@@ -135,6 +147,7 @@
 			files = (
 				CB859B931DFC2FC90099817A /* LaunchScreen.storyboard in Resources */,
 				CB859BA31DFC53FB0099817A /* us_states.json in Resources */,
+				CB859BA91DFD5A8A0099817A /* MarqueeSelectionView.xib in Resources */,
 				CB859B901DFC2FC90099817A /* Assets.xcassets in Resources */,
 				CB859B8E1DFC2FC90099817A /* Main.storyboard in Resources */,
 			);
@@ -147,7 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB859BA51DFD56EA0099817A /* MapView+Extension.swift in Sources */,
 				CB859B8B1DFC2FC90099817A /* ViewController.swift in Sources */,
+				CB859BA71DFD5A780099817A /* MarqueeSelectionView.swift in Sources */,
+				CB859BAB1DFD65D10099817A /* UIView+Extension.swift in Sources */,
 				CB859B891DFC2FC90099817A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

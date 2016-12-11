@@ -24,20 +24,33 @@
                                 </connections>
                             </mapView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NO5-b3-bAL">
-                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="500" width="525" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jM3-wH-Xdo">
+                                <rect key="frame" x="525" y="500" width="75" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="YJa-3q-JIF"/>
+                                </constraints>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="selectButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4EI-eA-pHq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="NO5-b3-bAL" secondAttribute="trailing" id="7TC-fg-Vkh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jM3-wH-Xdo" secondAttribute="bottom" id="36k-4E-m8P"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pHv-eD-gTD" secondAttribute="bottom" constant="100" id="7Zu-4u-Aeq"/>
                             <constraint firstItem="NO5-b3-bAL" firstAttribute="top" secondItem="pHv-eD-gTD" secondAttribute="bottom" id="DV2-9d-W1r"/>
+                            <constraint firstAttribute="trailing" secondItem="jM3-wH-Xdo" secondAttribute="trailing" id="Exg-aV-Vi2"/>
                             <constraint firstItem="pHv-eD-gTD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HPn-lf-oNt"/>
                             <constraint firstAttribute="trailing" secondItem="pHv-eD-gTD" secondAttribute="trailing" id="V04-Mn-Tor"/>
+                            <constraint firstItem="jM3-wH-Xdo" firstAttribute="top" secondItem="pHv-eD-gTD" secondAttribute="bottom" id="YNg-at-PHz"/>
                             <constraint firstItem="NO5-b3-bAL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="frd-8V-FNe"/>
+                            <constraint firstItem="jM3-wH-Xdo" firstAttribute="leading" secondItem="NO5-b3-bAL" secondAttribute="trailing" id="jKq-jd-cdJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NO5-b3-bAL" secondAttribute="bottom" id="mSb-cC-e5N"/>
                             <constraint firstItem="pHv-eD-gTD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uIi-l3-peM"/>
                         </constraints>
