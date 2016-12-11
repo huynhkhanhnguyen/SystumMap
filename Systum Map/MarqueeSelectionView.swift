@@ -13,7 +13,7 @@ protocol MarqueeSelectionViewDelegate: class {
 }
 
 class MarqueeSelectionView: UIView {
-  private let contentView = UIView()
+  let contentView = UIView()
   private let resizeButton = UIButton()
   private let buttonSize = CGSize(width: 50, height: 50)
   private let mininumContentSize = CGSize(width: 200, height: 200)
@@ -25,9 +25,10 @@ class MarqueeSelectionView: UIView {
     addSubview(contentView)
     addSubview(resizeButton)
 
+    contentView.layer.borderColor = UIColor.blackColor().CGColor
+    contentView.layer.borderWidth = 2
     contentView.frame = CGRect(origin: center, size: mininumContentSize)
-    contentView.alpha = 0.4
-    contentView.backgroundColor = UIColor.blackColor()
+    contentView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.4)
 
     resizeButton.setBackgroundImage(UIImage(named: "HandCursor"), forState: .Normal)
     updateResizeButtonFrame()
@@ -88,9 +89,8 @@ class MarqueeSelectionView: UIView {
         if contentView.frame.maxY > frame.height {
           contentView.frame.size = CGSize(width: contentView.frame.width, height: frame.maxY - contentView.frame.origin.y - 20)
         }
-
-        delegate?.updateFrame(contentView.frame)
       }
+      delegate?.updateFrame(contentView.frame)
     }
     updateResizeButtonFrame()
     gesture.setTranslation(CGPoint(x: 0, y: 0), inView: self)

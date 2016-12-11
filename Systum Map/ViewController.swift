@@ -55,6 +55,7 @@ class ViewController: UIViewController {
       (sender as? UIButton)?.setTitle("Select", forState: .Normal)
     } else {
       view.addSubview(marqueeView)
+      updateFrame(marqueeView.contentView.frame)
       (sender as? UIButton)?.setTitle("Done", forState: .Normal)
     }
     selectingRegions = !selectingRegions
