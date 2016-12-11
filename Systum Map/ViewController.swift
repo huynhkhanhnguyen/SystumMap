@@ -38,7 +38,7 @@ class ViewController: UIViewController {
   }
 
   @IBAction func selectButtonPressed(sender: AnyObject) {
-    let marqueeView = MarqueeSelectionView.initFromNib()
+    let marqueeView = MarqueeSelectionView(frame: mapView.frame)
     view.addSubview(marqueeView)
   }
 

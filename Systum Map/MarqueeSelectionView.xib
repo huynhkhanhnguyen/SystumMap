@@ -27,20 +27,24 @@
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="J8m-VU-wBn" secondAttribute="trailing" id="1hI-IE-HXO"/>
-                        <constraint firstAttribute="width" constant="303" id="qKI-Ec-NQE"/>
+                        <constraint firstAttribute="width" constant="303" id="WdM-5M-hTY"/>
                         <constraint firstAttribute="height" constant="272" id="sah-j3-KI5"/>
                         <constraint firstAttribute="bottom" secondItem="J8m-VU-wBn" secondAttribute="bottom" id="yab-Nq-saD"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Y3L-9o-fQP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="FTa-C7-p7f"/>
-                <constraint firstItem="Y3L-9o-fQP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="HQT-tM-YQ5"/>
+                <constraint firstItem="Y3L-9o-fQP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="nEO-fW-Rjm"/>
             </constraints>
             <connections>
                 <outlet property="contentView" destination="Y3L-9o-fQP" id="lUn-Ro-FhK"/>
+                <outlet property="heightConstraint" destination="sah-j3-KI5" id="6gY-WC-jZH"/>
+                <outlet property="leadConstraint" destination="nEO-fW-Rjm" id="qk1-TM-dHz"/>
                 <outlet property="resizeButton" destination="J8m-VU-wBn" id="32L-G5-qD4"/>
+                <outlet property="topConstraint" destination="FTa-C7-p7f" id="kKh-eL-Vg9"/>
+                <outlet property="widthConstraint" destination="WdM-5M-hTY" id="BQk-Rk-6wr"/>
             </connections>
         </view>
     </objects>
