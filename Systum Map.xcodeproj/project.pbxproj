@@ -17,6 +17,8 @@
 		CB859BA71DFD5A780099817A /* MarqueeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB859BA61DFD5A780099817A /* MarqueeSelectionView.swift */; };
 		CB859BA91DFD5A8A0099817A /* MarqueeSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB859BA81DFD5A8A0099817A /* MarqueeSelectionView.xib */; };
 		CB859BAB1DFD65D10099817A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB859BAA1DFD65D10099817A /* UIView+Extension.swift */; };
+		CBB7D1AB1DFEDFFC00D28C0A /* countries.kml in Resources */ = {isa = PBXBuildFile; fileRef = CBB7D1AA1DFEDFFC00D28C0A /* countries.kml */; };
+		CBB7D1AD1DFEE2B500D28C0A /* CountryKMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7D1AC1DFEE2B500D28C0A /* CountryKMLParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		CB859BA61DFD5A780099817A /* MarqueeSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeSelectionView.swift; sourceTree = "<group>"; };
 		CB859BA81DFD5A8A0099817A /* MarqueeSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarqueeSelectionView.xib; sourceTree = "<group>"; };
 		CB859BAA1DFD65D10099817A /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		CBB7D1AA1DFEDFFC00D28C0A /* countries.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = countries.kml; sourceTree = "<group>"; };
+		CBB7D1AC1DFEE2B500D28C0A /* CountryKMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryKMLParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				CB859BA61DFD5A780099817A /* MarqueeSelectionView.swift */,
 				CB859BA81DFD5A8A0099817A /* MarqueeSelectionView.xib */,
 				CB859BAA1DFD65D10099817A /* UIView+Extension.swift */,
+				CBB7D1AC1DFEE2B500D28C0A /* CountryKMLParser.swift */,
 			);
 			path = "Systum Map";
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				CB859BA21DFC53FB0099817A /* us_states.json */,
+				CBB7D1AA1DFEDFFC00D28C0A /* countries.kml */,
 			);
 			path = MapData;
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB859B931DFC2FC90099817A /* LaunchScreen.storyboard in Resources */,
+				CBB7D1AB1DFEDFFC00D28C0A /* countries.kml in Resources */,
 				CB859BA31DFC53FB0099817A /* us_states.json in Resources */,
 				CB859BA91DFD5A8A0099817A /* MarqueeSelectionView.xib in Resources */,
 				CB859B901DFC2FC90099817A /* Assets.xcassets in Resources */,
@@ -162,6 +169,7 @@
 			files = (
 				CB859BA51DFD56EA0099817A /* MapView+Extension.swift in Sources */,
 				CB859B8B1DFC2FC90099817A /* ViewController.swift in Sources */,
+				CBB7D1AD1DFEE2B500D28C0A /* CountryKMLParser.swift in Sources */,
 				CB859BA71DFD5A780099817A /* MarqueeSelectionView.swift in Sources */,
 				CB859BAB1DFD65D10099817A /* UIView+Extension.swift in Sources */,
 				CB859B891DFC2FC90099817A /* AppDelegate.swift in Sources */,
@@ -316,6 +324,7 @@
 				CB859B991DFC2FC90099817A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -29,15 +29,19 @@ class ViewController: UIViewController {
   @IBOutlet weak var textView: UITextView!
 
   private let initialLocation = CLLocation(latitude: 39.0119, longitude: -98.4842)
-  private let regionRadius: CLLocationDistance = 4000000 // meters
+  private let parser = CountryKMLParser()
 
   private var selectingRegions = false
   private var marqueeView: MarqueeSelectionView!
+  
 
   override func viewDidLoad() {
     super.viewDidLoad()
     centerMapAtLocation(initialLocation)
     mapView.addOverlays(usPolygons())
+
+//    parser.delegate = self
+//    parser.parse()
     initializeTapGesture()
   }
 
@@ -143,6 +147,12 @@ extension ViewController: MarqueeSelectionViewDelegate {
   }
 }
 
+extension ViewController: CountryKMLParserDelegate {
+  func parsedPolygons(polygons: [CustomPolygon]) {
+    mapView.addOverlays(polygons)
+  }
+}
+
 // Utilities
 extension ViewController {
   private func initializeTapGesture() {
@@ -154,7 +164,6 @@ extension ViewController {
   }
 
   private func usPolygons() -> [CustomPolygon] {
-    //Local file must exist
     var polygons: [CustomPolygon] = []
     let usStatesJSONPath = NSBundle.mainBundle().pathForResource("us_states", ofType: "json")!
     if let usStatesData = NSData(contentsOfFile: usStatesJSONPath), parsedJSON = try? NSJSONSerialization.JSONObjectWithData(usStatesData, options: .AllowFragments) {
