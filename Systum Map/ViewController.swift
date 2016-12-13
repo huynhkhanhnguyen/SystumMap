@@ -29,20 +29,30 @@ class ViewController: UIViewController {
   @IBOutlet weak var textView: UITextView!
 
   private let initialLocation = CLLocation(latitude: 39.0119, longitude: -98.4842)
-  private let parser = CountryKMLParser()
 
   private var selectingRegions = false
   private var marqueeView: MarqueeSelectionView!
-  
 
   override func viewDidLoad() {
     super.viewDidLoad()
     centerMapAtLocation(initialLocation)
-    mapView.addOverlays(usPolygons())
-
-//    parser.delegate = self
-//    parser.parse()
+    initializeMapOverlays()
     initializeTapGesture()
+  }
+
+  private func initializeMapOverlays() {
+    let mapBoundaryParser = CountryJSONParser()
+    let supportedCountries = ["England", "Wales", "Scotland", "Northern Ireland", "Isle Of Man", "Canada"]
+
+    for country in supportedCountries {
+      let fileName = country.stringByReplacingOccurrencesOfString(" ", withString: "")
+      let data = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource(fileName, ofType: "json")!)!
+      let polygons = mapBoundaryParser.parseData(data, countryName: country)
+      mapView.addOverlays(polygons)
+    }
+    
+    //US is a special case with states
+    mapView.addOverlays(usPolygons())
   }
 
   override func viewDidAppear(animated: Bool) {
@@ -144,12 +154,6 @@ extension ViewController: MKMapViewDelegate {
 extension ViewController: MarqueeSelectionViewDelegate {
   func updateFrame(frame: CGRect) {
     intersect(frame)
-  }
-}
-
-extension ViewController: CountryKMLParserDelegate {
-  func parsedPolygons(polygons: [CustomPolygon]) {
-    mapView.addOverlays(polygons)
   }
 }
 
