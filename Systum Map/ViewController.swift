@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 
 class CustomPolygon: MKPolygon {
+  var subPolygons: [CustomPolygon] = []
   var selected = false
   var fillColor: UIColor {
     get {
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
 
   private var selectingRegions = false
   private var marqueeView: MarqueeSelectionView!
+  private var overlayDict: [String: [CustomPolygon]] = [:]
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -49,10 +51,15 @@ class ViewController: UIViewController {
       let data = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource(fileName, ofType: "json")!)!
       let polygons = mapBoundaryParser.parseData(data, countryName: country)
       mapView.addOverlays(polygons)
+      overlayDict[country] = polygons
     }
     
     //US is a special case with states
-    mapView.addOverlays(usPolygons())
+    let mapPolygons = usPolygons()
+    if let caliPolygons = mapPolygons.filter({ $0.title == "California" }).first {
+      caliPolygons.subPolygons = loadCountyPolygonsForState("CA")
+    }
+    overlayDict["US"] = mapPolygons
   }
 
   override func viewDidAppear(animated: Bool) {
@@ -149,6 +156,23 @@ extension ViewController: MKMapViewDelegate {
     }
     return MKPolygonRenderer()
   }
+
+  func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+    for item in overlayDict {
+      //Remove all polygons
+      let subPolygons = item.1.flatMap { $0.subPolygons }
+      mapView.removeOverlays(item.1)
+      mapView.removeOverlays(subPolygons)
+
+      if mapView.zoomLevel() > 7 {
+        //In detail zoom, we add counties polygons
+        mapView.addOverlays(subPolygons)
+      } else {
+        //In futher zoom, we add countries & states polygon
+        mapView.addOverlays(item.1)
+      }
+    }
+  }
 }
 
 extension ViewController: MarqueeSelectionViewDelegate {
@@ -191,6 +215,34 @@ extension ViewController {
         polygons.append(polygon)
       }
     }
+    return polygons
+  }
+
+  private func loadCountyPolygonsForState(_: String) -> [CustomPolygon] {
+    let counties = ["Los Angeles CA", "Orange CA", "San Diego CA", "Riverside CA", "San Bernardino CA", "Santa Clara CA", "Alameda CA", "Sacramento CA", "Contra Costa CA", "Fresno CA", "Ventura CA", "San Francisco CA", "Kern CA", "San Mateo CA", "San Joaquin CA", "Stanislaus CA", "Sonoma CA", "Tulare CA", "Solano CA", "Monterey CA", "Santa Barbara CA", "Placer CA", "San Luis Obispo CA", "Santa Cruz CA", "Merced CA", "Marin CA", "Butte CA", "Yolo CA", "El Dorado CA", "Shasta CA", "Imperial CA", "Kings CA", "Madera CA", "Napa CA", "Humboldt CA", "Nevada CA", "Sutter CA", "Mendocino CA", "Yuba CA", "Lake CA", "Tehama CA", "Tuolumne CA", "San Benito CA", "Calaveras CA", "Siskiyou CA", "Amador CA", "Lassen CA", "Del Norte CA", "Glenn CA", "Plumas CA", "Colusa CA", "Mariposa CA", "Inyo CA", "Trinity CA", "Mono CA", "Modoc CA", "Sierra CA", "Alpine CA"]
+    var polygons: [CustomPolygon] = []
+
+    for county in counties {
+      let countyFileName = county.stringByReplacingOccurrencesOfString(" ", withString: "")
+      let usStatesJSONPath = NSBundle.mainBundle().pathForResource(countyFileName, ofType: "json")!
+      var polygonPoints: [CLLocationCoordinate2D] = []
+
+      if let usStatesData = NSData(contentsOfFile: usStatesJSONPath), parsedJSON = try? NSJSONSerialization.JSONObjectWithData(usStatesData, options: .AllowFragments) {
+        if let points = parsedJSON.valueForKeyPath("polygonpoints") as? [[String]] {
+          for point in points {
+            if point.count == 2 {
+              if let lon = Double(point[0]), let lat = Double(point[1]) {
+                polygonPoints.append(CLLocationCoordinate2D(latitude: lat, longitude: lon))
+              }
+            }
+          }
+          let polygon = CustomPolygon(coordinates: &polygonPoints, count: polygonPoints.count)
+          polygon.title = county
+          polygons.append(polygon)
+        }
+      }
+    }
+
     return polygons
   }
 

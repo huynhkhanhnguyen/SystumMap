@@ -7,6 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB4152F61E01922F00A52FCA /* AlamedaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152BC1E01922F00A52FCA /* AlamedaCA.json */; };
+		CB4152F71E01922F00A52FCA /* AlpineCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152BD1E01922F00A52FCA /* AlpineCA.json */; };
+		CB4152F81E01922F00A52FCA /* AmadorCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152BE1E01922F00A52FCA /* AmadorCA.json */; };
+		CB4152F91E01922F00A52FCA /* ButteCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152BF1E01922F00A52FCA /* ButteCA.json */; };
+		CB4152FA1E01922F00A52FCA /* CalaverasCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152C01E01922F00A52FCA /* CalaverasCA.json */; };
+		CB4152FB1E01922F00A52FCA /* ColusaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152C11E01922F00A52FCA /* ColusaCA.json */; };
+		CB4152FC1E01922F00A52FCA /* ContraCostaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152C21E01922F00A52FCA /* ContraCostaCA.json */; };
+		CB4152FD1E01922F00A52FCA /* DelNorteCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152C31E01922F00A52FCA /* DelNorteCA.json */; };
+		CB4152FE1E01922F00A52FCA /* ElDoradoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152C41E01922F00A52FCA /* ElDoradoCA.json */; };
+		CB4152FF1E01922F00A52FCA /* FresnoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152C51E01922F00A52FCA /* FresnoCA.json */; };
+		CB4153001E01922F00A52FCA /* GlennCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152C61E01922F00A52FCA /* GlennCA.json */; };
+		CB4153011E01922F00A52FCA /* HumboldtCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152C71E01922F00A52FCA /* HumboldtCA.json */; };
+		CB4153021E01922F00A52FCA /* ImperialCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152C81E01922F00A52FCA /* ImperialCA.json */; };
+		CB4153031E01922F00A52FCA /* InyoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152C91E01922F00A52FCA /* InyoCA.json */; };
+		CB4153041E01922F00A52FCA /* KernCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152CA1E01922F00A52FCA /* KernCA.json */; };
+		CB4153051E01922F00A52FCA /* KingsCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152CB1E01922F00A52FCA /* KingsCA.json */; };
+		CB4153061E01922F00A52FCA /* LakeCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152CC1E01922F00A52FCA /* LakeCA.json */; };
+		CB4153071E01922F00A52FCA /* LassenCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152CD1E01922F00A52FCA /* LassenCA.json */; };
+		CB4153081E01922F00A52FCA /* LosAngelesCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152CE1E01922F00A52FCA /* LosAngelesCA.json */; };
+		CB4153091E01922F00A52FCA /* MaderaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152CF1E01922F00A52FCA /* MaderaCA.json */; };
+		CB41530A1E01922F00A52FCA /* MarinCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152D01E01922F00A52FCA /* MarinCA.json */; };
+		CB41530B1E01922F00A52FCA /* MariposaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152D11E01922F00A52FCA /* MariposaCA.json */; };
+		CB41530C1E01922F00A52FCA /* MendocinoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152D21E01922F00A52FCA /* MendocinoCA.json */; };
+		CB41530D1E01922F00A52FCA /* MercedCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152D31E01922F00A52FCA /* MercedCA.json */; };
+		CB41530E1E01922F00A52FCA /* ModocCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152D41E01922F00A52FCA /* ModocCA.json */; };
+		CB41530F1E01922F00A52FCA /* MonoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152D51E01922F00A52FCA /* MonoCA.json */; };
+		CB4153101E01922F00A52FCA /* MontereyCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152D61E01922F00A52FCA /* MontereyCA.json */; };
+		CB4153111E01922F00A52FCA /* NapaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152D71E01922F00A52FCA /* NapaCA.json */; };
+		CB4153121E01922F00A52FCA /* NevadaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152D81E01922F00A52FCA /* NevadaCA.json */; };
+		CB4153131E01922F00A52FCA /* OrangeCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152D91E01922F00A52FCA /* OrangeCA.json */; };
+		CB4153141E01922F00A52FCA /* PlacerCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152DA1E01922F00A52FCA /* PlacerCA.json */; };
+		CB4153151E01922F00A52FCA /* PlumasCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152DB1E01922F00A52FCA /* PlumasCA.json */; };
+		CB4153161E01922F00A52FCA /* RiversideCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152DC1E01922F00A52FCA /* RiversideCA.json */; };
+		CB4153171E01922F00A52FCA /* SacramentoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152DD1E01922F00A52FCA /* SacramentoCA.json */; };
+		CB4153181E01922F00A52FCA /* SanBenitoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152DE1E01922F00A52FCA /* SanBenitoCA.json */; };
+		CB4153191E01922F00A52FCA /* SanBernardinoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152DF1E01922F00A52FCA /* SanBernardinoCA.json */; };
+		CB41531A1E01922F00A52FCA /* SanDiegoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152E01E01922F00A52FCA /* SanDiegoCA.json */; };
+		CB41531B1E01922F00A52FCA /* SanFranciscoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152E11E01922F00A52FCA /* SanFranciscoCA.json */; };
+		CB41531C1E01922F00A52FCA /* SanJoaquinCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152E21E01922F00A52FCA /* SanJoaquinCA.json */; };
+		CB41531D1E01922F00A52FCA /* SanLuisObispoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152E31E01922F00A52FCA /* SanLuisObispoCA.json */; };
+		CB41531E1E01922F00A52FCA /* SanMateoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152E41E01922F00A52FCA /* SanMateoCA.json */; };
+		CB41531F1E01922F00A52FCA /* SantaBarbaraCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152E51E01922F00A52FCA /* SantaBarbaraCA.json */; };
+		CB4153201E01922F00A52FCA /* SantaClaraCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152E61E01922F00A52FCA /* SantaClaraCA.json */; };
+		CB4153211E01922F00A52FCA /* SantaCruzCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152E71E01922F00A52FCA /* SantaCruzCA.json */; };
+		CB4153221E01922F00A52FCA /* ShastaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152E81E01922F00A52FCA /* ShastaCA.json */; };
+		CB4153231E01922F00A52FCA /* SierraCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152E91E01922F00A52FCA /* SierraCA.json */; };
+		CB4153241E01922F00A52FCA /* SiskiyouCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152EA1E01922F00A52FCA /* SiskiyouCA.json */; };
+		CB4153251E01922F00A52FCA /* SolanoCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152EB1E01922F00A52FCA /* SolanoCA.json */; };
+		CB4153261E01922F00A52FCA /* SonomaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152EC1E01922F00A52FCA /* SonomaCA.json */; };
+		CB4153271E01922F00A52FCA /* StanislausCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152ED1E01922F00A52FCA /* StanislausCA.json */; };
+		CB4153281E01922F00A52FCA /* SutterCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152EE1E01922F00A52FCA /* SutterCA.json */; };
+		CB4153291E01922F00A52FCA /* TehamaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152EF1E01922F00A52FCA /* TehamaCA.json */; };
+		CB41532A1E01922F00A52FCA /* TrinityCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152F01E01922F00A52FCA /* TrinityCA.json */; };
+		CB41532B1E01922F00A52FCA /* TulareCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152F11E01922F00A52FCA /* TulareCA.json */; };
+		CB41532C1E01922F00A52FCA /* TuolumneCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152F21E01922F00A52FCA /* TuolumneCA.json */; };
+		CB41532D1E01922F00A52FCA /* VenturaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152F31E01922F00A52FCA /* VenturaCA.json */; };
+		CB41532E1E01922F00A52FCA /* YoloCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152F41E01922F00A52FCA /* YoloCA.json */; };
+		CB41532F1E01922F00A52FCA /* YubaCA.json in Resources */ = {isa = PBXBuildFile; fileRef = CB4152F51E01922F00A52FCA /* YubaCA.json */; };
 		CB859B891DFC2FC90099817A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB859B881DFC2FC90099817A /* AppDelegate.swift */; };
 		CB859B8B1DFC2FC90099817A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB859B8A1DFC2FC90099817A /* ViewController.swift */; };
 		CB859B8E1DFC2FC90099817A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB859B8C1DFC2FC90099817A /* Main.storyboard */; };
@@ -28,6 +86,64 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB4152BC1E01922F00A52FCA /* AlamedaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AlamedaCA.json; sourceTree = "<group>"; };
+		CB4152BD1E01922F00A52FCA /* AlpineCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AlpineCA.json; sourceTree = "<group>"; };
+		CB4152BE1E01922F00A52FCA /* AmadorCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AmadorCA.json; sourceTree = "<group>"; };
+		CB4152BF1E01922F00A52FCA /* ButteCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ButteCA.json; sourceTree = "<group>"; };
+		CB4152C01E01922F00A52FCA /* CalaverasCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CalaverasCA.json; sourceTree = "<group>"; };
+		CB4152C11E01922F00A52FCA /* ColusaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ColusaCA.json; sourceTree = "<group>"; };
+		CB4152C21E01922F00A52FCA /* ContraCostaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ContraCostaCA.json; sourceTree = "<group>"; };
+		CB4152C31E01922F00A52FCA /* DelNorteCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DelNorteCA.json; sourceTree = "<group>"; };
+		CB4152C41E01922F00A52FCA /* ElDoradoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ElDoradoCA.json; sourceTree = "<group>"; };
+		CB4152C51E01922F00A52FCA /* FresnoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FresnoCA.json; sourceTree = "<group>"; };
+		CB4152C61E01922F00A52FCA /* GlennCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GlennCA.json; sourceTree = "<group>"; };
+		CB4152C71E01922F00A52FCA /* HumboldtCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HumboldtCA.json; sourceTree = "<group>"; };
+		CB4152C81E01922F00A52FCA /* ImperialCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImperialCA.json; sourceTree = "<group>"; };
+		CB4152C91E01922F00A52FCA /* InyoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InyoCA.json; sourceTree = "<group>"; };
+		CB4152CA1E01922F00A52FCA /* KernCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KernCA.json; sourceTree = "<group>"; };
+		CB4152CB1E01922F00A52FCA /* KingsCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KingsCA.json; sourceTree = "<group>"; };
+		CB4152CC1E01922F00A52FCA /* LakeCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LakeCA.json; sourceTree = "<group>"; };
+		CB4152CD1E01922F00A52FCA /* LassenCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LassenCA.json; sourceTree = "<group>"; };
+		CB4152CE1E01922F00A52FCA /* LosAngelesCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LosAngelesCA.json; sourceTree = "<group>"; };
+		CB4152CF1E01922F00A52FCA /* MaderaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MaderaCA.json; sourceTree = "<group>"; };
+		CB4152D01E01922F00A52FCA /* MarinCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MarinCA.json; sourceTree = "<group>"; };
+		CB4152D11E01922F00A52FCA /* MariposaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MariposaCA.json; sourceTree = "<group>"; };
+		CB4152D21E01922F00A52FCA /* MendocinoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MendocinoCA.json; sourceTree = "<group>"; };
+		CB4152D31E01922F00A52FCA /* MercedCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MercedCA.json; sourceTree = "<group>"; };
+		CB4152D41E01922F00A52FCA /* ModocCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ModocCA.json; sourceTree = "<group>"; };
+		CB4152D51E01922F00A52FCA /* MonoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MonoCA.json; sourceTree = "<group>"; };
+		CB4152D61E01922F00A52FCA /* MontereyCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MontereyCA.json; sourceTree = "<group>"; };
+		CB4152D71E01922F00A52FCA /* NapaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NapaCA.json; sourceTree = "<group>"; };
+		CB4152D81E01922F00A52FCA /* NevadaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NevadaCA.json; sourceTree = "<group>"; };
+		CB4152D91E01922F00A52FCA /* OrangeCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OrangeCA.json; sourceTree = "<group>"; };
+		CB4152DA1E01922F00A52FCA /* PlacerCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PlacerCA.json; sourceTree = "<group>"; };
+		CB4152DB1E01922F00A52FCA /* PlumasCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PlumasCA.json; sourceTree = "<group>"; };
+		CB4152DC1E01922F00A52FCA /* RiversideCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RiversideCA.json; sourceTree = "<group>"; };
+		CB4152DD1E01922F00A52FCA /* SacramentoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SacramentoCA.json; sourceTree = "<group>"; };
+		CB4152DE1E01922F00A52FCA /* SanBenitoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanBenitoCA.json; sourceTree = "<group>"; };
+		CB4152DF1E01922F00A52FCA /* SanBernardinoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanBernardinoCA.json; sourceTree = "<group>"; };
+		CB4152E01E01922F00A52FCA /* SanDiegoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanDiegoCA.json; sourceTree = "<group>"; };
+		CB4152E11E01922F00A52FCA /* SanFranciscoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanFranciscoCA.json; sourceTree = "<group>"; };
+		CB4152E21E01922F00A52FCA /* SanJoaquinCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanJoaquinCA.json; sourceTree = "<group>"; };
+		CB4152E31E01922F00A52FCA /* SanLuisObispoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanLuisObispoCA.json; sourceTree = "<group>"; };
+		CB4152E41E01922F00A52FCA /* SanMateoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanMateoCA.json; sourceTree = "<group>"; };
+		CB4152E51E01922F00A52FCA /* SantaBarbaraCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SantaBarbaraCA.json; sourceTree = "<group>"; };
+		CB4152E61E01922F00A52FCA /* SantaClaraCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SantaClaraCA.json; sourceTree = "<group>"; };
+		CB4152E71E01922F00A52FCA /* SantaCruzCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SantaCruzCA.json; sourceTree = "<group>"; };
+		CB4152E81E01922F00A52FCA /* ShastaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ShastaCA.json; sourceTree = "<group>"; };
+		CB4152E91E01922F00A52FCA /* SierraCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SierraCA.json; sourceTree = "<group>"; };
+		CB4152EA1E01922F00A52FCA /* SiskiyouCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SiskiyouCA.json; sourceTree = "<group>"; };
+		CB4152EB1E01922F00A52FCA /* SolanoCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SolanoCA.json; sourceTree = "<group>"; };
+		CB4152EC1E01922F00A52FCA /* SonomaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SonomaCA.json; sourceTree = "<group>"; };
+		CB4152ED1E01922F00A52FCA /* StanislausCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StanislausCA.json; sourceTree = "<group>"; };
+		CB4152EE1E01922F00A52FCA /* SutterCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SutterCA.json; sourceTree = "<group>"; };
+		CB4152EF1E01922F00A52FCA /* TehamaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TehamaCA.json; sourceTree = "<group>"; };
+		CB4152F01E01922F00A52FCA /* TrinityCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TrinityCA.json; sourceTree = "<group>"; };
+		CB4152F11E01922F00A52FCA /* TulareCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TulareCA.json; sourceTree = "<group>"; };
+		CB4152F21E01922F00A52FCA /* TuolumneCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TuolumneCA.json; sourceTree = "<group>"; };
+		CB4152F31E01922F00A52FCA /* VenturaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VenturaCA.json; sourceTree = "<group>"; };
+		CB4152F41E01922F00A52FCA /* YoloCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = YoloCA.json; sourceTree = "<group>"; };
+		CB4152F51E01922F00A52FCA /* YubaCA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = YubaCA.json; sourceTree = "<group>"; };
 		CB859B851DFC2FC90099817A /* Systum Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Systum Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB859B881DFC2FC90099817A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB859B8A1DFC2FC90099817A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +177,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB4152B81E01906100A52FCA /* US */ = {
+			isa = PBXGroup;
+			children = (
+				CB4152B91E01908B00A52FCA /* California */,
+				CB859BA21DFC53FB0099817A /* us_states.json */,
+			);
+			path = US;
+			sourceTree = "<group>";
+		};
+		CB4152B91E01908B00A52FCA /* California */ = {
+			isa = PBXGroup;
+			children = (
+				CB4152BC1E01922F00A52FCA /* AlamedaCA.json */,
+				CB4152BD1E01922F00A52FCA /* AlpineCA.json */,
+				CB4152BE1E01922F00A52FCA /* AmadorCA.json */,
+				CB4152BF1E01922F00A52FCA /* ButteCA.json */,
+				CB4152C01E01922F00A52FCA /* CalaverasCA.json */,
+				CB4152C11E01922F00A52FCA /* ColusaCA.json */,
+				CB4152C21E01922F00A52FCA /* ContraCostaCA.json */,
+				CB4152C31E01922F00A52FCA /* DelNorteCA.json */,
+				CB4152C41E01922F00A52FCA /* ElDoradoCA.json */,
+				CB4152C51E01922F00A52FCA /* FresnoCA.json */,
+				CB4152C61E01922F00A52FCA /* GlennCA.json */,
+				CB4152C71E01922F00A52FCA /* HumboldtCA.json */,
+				CB4152C81E01922F00A52FCA /* ImperialCA.json */,
+				CB4152C91E01922F00A52FCA /* InyoCA.json */,
+				CB4152CA1E01922F00A52FCA /* KernCA.json */,
+				CB4152CB1E01922F00A52FCA /* KingsCA.json */,
+				CB4152CC1E01922F00A52FCA /* LakeCA.json */,
+				CB4152CD1E01922F00A52FCA /* LassenCA.json */,
+				CB4152CE1E01922F00A52FCA /* LosAngelesCA.json */,
+				CB4152CF1E01922F00A52FCA /* MaderaCA.json */,
+				CB4152D01E01922F00A52FCA /* MarinCA.json */,
+				CB4152D11E01922F00A52FCA /* MariposaCA.json */,
+				CB4152D21E01922F00A52FCA /* MendocinoCA.json */,
+				CB4152D31E01922F00A52FCA /* MercedCA.json */,
+				CB4152D41E01922F00A52FCA /* ModocCA.json */,
+				CB4152D51E01922F00A52FCA /* MonoCA.json */,
+				CB4152D61E01922F00A52FCA /* MontereyCA.json */,
+				CB4152D71E01922F00A52FCA /* NapaCA.json */,
+				CB4152D81E01922F00A52FCA /* NevadaCA.json */,
+				CB4152D91E01922F00A52FCA /* OrangeCA.json */,
+				CB4152DA1E01922F00A52FCA /* PlacerCA.json */,
+				CB4152DB1E01922F00A52FCA /* PlumasCA.json */,
+				CB4152DC1E01922F00A52FCA /* RiversideCA.json */,
+				CB4152DD1E01922F00A52FCA /* SacramentoCA.json */,
+				CB4152DE1E01922F00A52FCA /* SanBenitoCA.json */,
+				CB4152DF1E01922F00A52FCA /* SanBernardinoCA.json */,
+				CB4152E01E01922F00A52FCA /* SanDiegoCA.json */,
+				CB4152E11E01922F00A52FCA /* SanFranciscoCA.json */,
+				CB4152E21E01922F00A52FCA /* SanJoaquinCA.json */,
+				CB4152E31E01922F00A52FCA /* SanLuisObispoCA.json */,
+				CB4152E41E01922F00A52FCA /* SanMateoCA.json */,
+				CB4152E51E01922F00A52FCA /* SantaBarbaraCA.json */,
+				CB4152E61E01922F00A52FCA /* SantaClaraCA.json */,
+				CB4152E71E01922F00A52FCA /* SantaCruzCA.json */,
+				CB4152E81E01922F00A52FCA /* ShastaCA.json */,
+				CB4152E91E01922F00A52FCA /* SierraCA.json */,
+				CB4152EA1E01922F00A52FCA /* SiskiyouCA.json */,
+				CB4152EB1E01922F00A52FCA /* SolanoCA.json */,
+				CB4152EC1E01922F00A52FCA /* SonomaCA.json */,
+				CB4152ED1E01922F00A52FCA /* StanislausCA.json */,
+				CB4152EE1E01922F00A52FCA /* SutterCA.json */,
+				CB4152EF1E01922F00A52FCA /* TehamaCA.json */,
+				CB4152F01E01922F00A52FCA /* TrinityCA.json */,
+				CB4152F11E01922F00A52FCA /* TulareCA.json */,
+				CB4152F21E01922F00A52FCA /* TuolumneCA.json */,
+				CB4152F31E01922F00A52FCA /* VenturaCA.json */,
+				CB4152F41E01922F00A52FCA /* YoloCA.json */,
+				CB4152F51E01922F00A52FCA /* YubaCA.json */,
+			);
+			path = California;
+			sourceTree = "<group>";
+		};
 		CB859B7C1DFC2FC90099817A = {
 			isa = PBXGroup;
 			children = (
@@ -100,13 +290,13 @@
 		CB859BA11DFC53FB0099817A /* MapData */ = {
 			isa = PBXGroup;
 			children = (
+				CB4152B81E01906100A52FCA /* US */,
 				CBF5CD551E0059A4002A1E9F /* Canada.json */,
 				CBF5CD471E0046B3002A1E9F /* IsleOfMan.json */,
 				CBF5CD481E0046B3002A1E9F /* Wales.json */,
 				CBF5CD491E0046B3002A1E9F /* Scotland.json */,
 				CBF5CD4A1E0046B3002A1E9F /* NorthernIreland.json */,
 				CBF5CD4B1E0046B3002A1E9F /* England.json */,
-				CB859BA21DFC53FB0099817A /* us_states.json */,
 			);
 			path = MapData;
 			sourceTree = "<group>";
@@ -170,16 +360,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF5CD4C1E0046B3002A1E9F /* IsleOfMan.json in Resources */,
+				CB4153251E01922F00A52FCA /* SolanoCA.json in Resources */,
+				CB4152F71E01922F00A52FCA /* AlpineCA.json in Resources */,
+				CB41531D1E01922F00A52FCA /* SanLuisObispoCA.json in Resources */,
 				CB859B931DFC2FC90099817A /* LaunchScreen.storyboard in Resources */,
+				CB4153291E01922F00A52FCA /* TehamaCA.json in Resources */,
+				CB41532C1E01922F00A52FCA /* TuolumneCA.json in Resources */,
+				CB4153111E01922F00A52FCA /* NapaCA.json in Resources */,
+				CB41530B1E01922F00A52FCA /* MariposaCA.json in Resources */,
+				CB41531A1E01922F00A52FCA /* SanDiegoCA.json in Resources */,
+				CB4153241E01922F00A52FCA /* SiskiyouCA.json in Resources */,
+				CB41532F1E01922F00A52FCA /* YubaCA.json in Resources */,
+				CB4153191E01922F00A52FCA /* SanBernardinoCA.json in Resources */,
 				CBF5CD4D1E0046B3002A1E9F /* Wales.json in Resources */,
+				CB41531C1E01922F00A52FCA /* SanJoaquinCA.json in Resources */,
 				CBF5CD4F1E0046B3002A1E9F /* NorthernIreland.json in Resources */,
+				CB4152FE1E01922F00A52FCA /* ElDoradoCA.json in Resources */,
+				CB41532B1E01922F00A52FCA /* TulareCA.json in Resources */,
+				CB4153261E01922F00A52FCA /* SonomaCA.json in Resources */,
+				CB4153171E01922F00A52FCA /* SacramentoCA.json in Resources */,
+				CB4152F81E01922F00A52FCA /* AmadorCA.json in Resources */,
+				CB4153031E01922F00A52FCA /* InyoCA.json in Resources */,
+				CB4153201E01922F00A52FCA /* SantaClaraCA.json in Resources */,
 				CB859BA31DFC53FB0099817A /* us_states.json in Resources */,
+				CB4153071E01922F00A52FCA /* LassenCA.json in Resources */,
+				CB4152FD1E01922F00A52FCA /* DelNorteCA.json in Resources */,
+				CB4153161E01922F00A52FCA /* RiversideCA.json in Resources */,
 				CBF5CD501E0046B3002A1E9F /* England.json in Resources */,
+				CB41531F1E01922F00A52FCA /* SantaBarbaraCA.json in Resources */,
 				CB859BA91DFD5A8A0099817A /* MarqueeSelectionView.xib in Resources */,
+				CB41530E1E01922F00A52FCA /* ModocCA.json in Resources */,
+				CB4153121E01922F00A52FCA /* NevadaCA.json in Resources */,
+				CB4152F61E01922F00A52FCA /* AlamedaCA.json in Resources */,
+				CB4153211E01922F00A52FCA /* SantaCruzCA.json in Resources */,
+				CB41530F1E01922F00A52FCA /* MonoCA.json in Resources */,
+				CB41532D1E01922F00A52FCA /* VenturaCA.json in Resources */,
+				CB41530D1E01922F00A52FCA /* MercedCA.json in Resources */,
+				CB4153281E01922F00A52FCA /* SutterCA.json in Resources */,
+				CB4153051E01922F00A52FCA /* KingsCA.json in Resources */,
+				CB41532E1E01922F00A52FCA /* YoloCA.json in Resources */,
+				CB41530A1E01922F00A52FCA /* MarinCA.json in Resources */,
 				CBF5CD561E0059A4002A1E9F /* Canada.json in Resources */,
+				CB41530C1E01922F00A52FCA /* MendocinoCA.json in Resources */,
+				CB4153141E01922F00A52FCA /* PlacerCA.json in Resources */,
+				CB4153101E01922F00A52FCA /* MontereyCA.json in Resources */,
+				CB41531B1E01922F00A52FCA /* SanFranciscoCA.json in Resources */,
+				CB4153271E01922F00A52FCA /* StanislausCA.json in Resources */,
+				CB4153151E01922F00A52FCA /* PlumasCA.json in Resources */,
 				CBF5CD4E1E0046B3002A1E9F /* Scotland.json in Resources */,
+				CB4153001E01922F00A52FCA /* GlennCA.json in Resources */,
+				CB41532A1E01922F00A52FCA /* TrinityCA.json in Resources */,
 				CB859B901DFC2FC90099817A /* Assets.xcassets in Resources */,
+				CB4153011E01922F00A52FCA /* HumboldtCA.json in Resources */,
+				CB4152FF1E01922F00A52FCA /* FresnoCA.json in Resources */,
+				CB4153061E01922F00A52FCA /* LakeCA.json in Resources */,
 				CB859B8E1DFC2FC90099817A /* Main.storyboard in Resources */,
+				CB4152FA1E01922F00A52FCA /* CalaverasCA.json in Resources */,
+				CB4153231E01922F00A52FCA /* SierraCA.json in Resources */,
+				CB4153221E01922F00A52FCA /* ShastaCA.json in Resources */,
+				CB4152FC1E01922F00A52FCA /* ContraCostaCA.json in Resources */,
+				CB4152FB1E01922F00A52FCA /* ColusaCA.json in Resources */,
+				CB4153041E01922F00A52FCA /* KernCA.json in Resources */,
+				CB4153131E01922F00A52FCA /* OrangeCA.json in Resources */,
+				CB4153181E01922F00A52FCA /* SanBenitoCA.json in Resources */,
+				CB4153021E01922F00A52FCA /* ImperialCA.json in Resources */,
+				CB4153081E01922F00A52FCA /* LosAngelesCA.json in Resources */,
+				CB4152F91E01922F00A52FCA /* ButteCA.json in Resources */,
+				CB4153091E01922F00A52FCA /* MaderaCA.json in Resources */,
+				CB41531E1E01922F00A52FCA /* SanMateoCA.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
