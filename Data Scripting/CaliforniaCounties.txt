@@ -1,0 +1,58 @@
+Los Angeles CA
+Orange CA
+San Diego CA
+Riverside CA
+San Bernardino CA
+Santa Clara CA
+Alameda CA
+Sacramento CA
+Contra Costa CA
+Fresno CA
+Ventura CA
+San Francisco CA
+Kern CA
+San Mateo CA
+San Joaquin CA
+Stanislaus CA
+Sonoma CA
+Tulare CA
+Solano CA
+Monterey CA
+Santa Barbara CA
+Placer CA
+San Luis Obispo CA
+Santa Cruz CA
+Merced CA
+Marin CA
+Butte CA
+Yolo CA
+El Dorado CA
+Shasta CA
+Imperial CA
+Kings CA
+Madera CA
+Napa CA
+Humboldt CA
+Nevada CA
+Sutter CA
+Mendocino CA
+Yuba CA
+Lake CA
+Tehama CA
+Tuolumne CA
+San Benito CA
+Calaveras CA
+Siskiyou CA
+Amador CA
+Lassen CA
+Del Norte CA
+Glenn CA
+Plumas CA
+Colusa CA
+Mariposa CA
+Inyo CA
+Trinity CA
+Mono CA
+Modoc CA
+Sierra CA
+Alpine CA
